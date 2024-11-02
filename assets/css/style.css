@@ -59,37 +59,61 @@ button {
   margin-left: 43em;
 }
 
-#feedzz {
-  border-bottom: 1px solid black;
-  height: auto;
-  padding: 40px;
-  padding-bottom: 50px;
-}
-
-#trending {
+#article-flex {
   display: flex;
-  align-items: center;
-  font-weight: bold;
-  margin: 20px;
-  margin-left: 10em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 6rem;
+  font-size: 15px;
 }
-
-#trends {
+#first-div {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin-left: 15em;
-  align-items: center;
-
-  align-content: space-around;
-  height: 200px;
-  width: 100%;
 }
-.miau {
-  margin-right: 30px;
-}
-
-#post {
+#last-div {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+}
+.item {
+  width: 450px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.number {
+  font-size: 2rem;
+  color: grey;
+}
+.name {
+  margin-top: -31px;
+  padding-left: 26px;
+  font-weight: 900;
+}
+.image-article {
+  height: 25px;
+  border-radius: 20px;
+  margin-right: 22px;
+  margin-left: 14px;
+}
+.square {
+  border-radius: 10%;
+  height: 20px;
+  margin-right: 27px;
+  margin-left: 16px;
+}
+.title {
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-block: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.date {
+  margin-left: 42px;
 }
