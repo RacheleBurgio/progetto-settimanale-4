@@ -11,10 +11,12 @@ nav img {
 }
 h1 {
   font-size: 5em;
+  margin: 1em;
 }
 h2 {
-  font-size: 3em;
-  margin: 30px;
+  font-size: 2em;
+  margin-left: 3em;
+  margin-top: -50px;
 }
 #navbar {
   display: flex;
@@ -39,20 +41,55 @@ h2 {
   background-color: #ffc017;
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;
 }
-#start a {
+
+button {
   color: white;
   background-color: black;
   border-radius: 30px;
-  padding: 15px 20px;
+  padding: 10px 50px;
+  margin-top: 40px;
+  margin-left: 90px;
 }
 
 #m {
-  width: 10em;
-  margin-left: 13em;
-  font-size: 1.5em;
-  padding: 0px;
-  margin-right: 0px;
-  align-self: stretch;
+  width: 30%;
+  margin-left: 43em;
+}
+
+#feedzz {
+  border-bottom: 1px solid black;
+  height: auto;
+  padding: 40px;
+  padding-bottom: 50px;
+}
+
+#trending {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin: 20px;
+  margin-left: 10em;
+}
+
+#trends {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 15em;
+  align-items: center;
+
+  align-content: space-around;
+  height: 200px;
+  width: 100%;
+}
+.miau {
+  margin-right: 30px;
+}
+
+#post {
+  display: flex;
+  flex-wrap: wrap;
 }
