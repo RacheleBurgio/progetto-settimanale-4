@@ -1,13 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+html {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-size: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+}
 nav {
   display: flex;
   border-bottom: 1px solid black;
   background-color: #ffc017;
   position: fixed;
   width: 100%;
+  justify-content: space-between;
+
   z-index: 1;
+  transition: background-color 0.3s linear;
 }
 a {
   text-decoration: none;
+  color: #191919;
 }
 nav img {
   margin-left: 5em;
@@ -15,6 +29,7 @@ nav img {
 h1 {
   font-size: 5em;
   margin: 1em;
+  font-family: 'Spectral', serif;
 }
 h2 {
   font-size: 2em;
@@ -25,23 +40,26 @@ h2 {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  width: 100%;
+
   margin-right: 3em;
 }
 
 #navbar a {
-  color: black;
   margin: 10px;
   align-self: center;
 }
-#navbar a:last-of-type {
+#verde {
   background-color: black;
   color: white;
   padding: 15px 20px;
   border-radius: 30px;
+  transition: background-color 0.3s linear;
 }
 .scroll {
   background-color: white;
+}
+.scroll2 {
+  background-color: #1a8917;
 }
 
 #start {
@@ -63,14 +81,23 @@ button {
 }
 
 #svg-col {
-  width: 30%;
   margin-left: 41em;
+}
+
+#trending {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #191919;
 }
 
 #article-flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  flex-shrink: 0;
+  width: 100%;
   margin-left: 6rem;
   font-size: 15px;
 }
@@ -91,73 +118,88 @@ button {
   border-bottom: 2px solid rgba(227, 225, 225, 0.579);
   margin-bottom: 5em;
 }
+
 .item {
+  margin: 0 1rem;
   width: 450px;
   height: 150px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.textualElements {
+  margin: 0;
 }
 .number {
+  margin-right: 1rem;
   font-size: 2rem;
   color: grey;
 }
 .name {
-  margin-top: -31px;
-  padding-left: 26px;
+  display: flex;
+  align-items: center;
+  /*margin-top: -31px;*/
   font-weight: 900;
 }
-.image-article {
+.round {
   height: 25px;
   border-radius: 20px;
-  margin-right: 22px;
-  margin-left: 14px;
+  margin-right: 0.5rem;
 }
 .square {
   border-radius: 10%;
   height: 20px;
-  margin-right: 27px;
-  margin-left: 16px;
+  margin-right: 0.5rem;
 }
 .title {
-  margin-left: 40px;
+  /*margin-left: 40px; */
   margin-top: 10px;
   margin-block: 10px;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-.date {
-  margin-left: 42px;
+#completo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
 }
 
-.completo {
+.post {
   display: flex;
+  justify-content: space-between;
+}
+
+.alo {
+  margin: 2rem 3rem;
 }
 
 .copertina {
-  position: absolute;
-  left: 37em;
-  height: 133px;
-  width: 13em;
-  margin-top: 21px;
+  width: 300px;
 }
-.post {
-  width: 25%;
-  margin: 30px;
-  margin-left: 7em;
+
+.copertina img {
+  width: 300px;
 }
 
 .utente {
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
+
 .utente img {
   border-radius: 20px;
   width: 25px;
+  margin: 5px;
 }
+
 .titolo {
   font-weight: bold;
   margin: 5px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .testo {
@@ -167,13 +209,22 @@ button {
 
 .data {
   color: gray;
-  margin: 10px 0px 5px 0px;
+}
+
+.postInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bookmark {
+  margin-top: 10px;
 }
 
 .cosino {
   background-color: rgb(220, 220, 220);
   padding: 5px 7px 5px 5px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .star {
@@ -185,26 +236,24 @@ button {
 .star2 {
   position: relative;
 }
+#miao {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 
-footer {
-  position: relative;
+  width: 50%;
 }
 #fine {
-  position: absolute;
-  bottom: 81em;
-  right: 20em;
-  left: 25em;
-  height: 35px;
-  margin-left: 40em;
-  padding: 10px 30px;
-  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
 }
-
 #coso {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
 #lista1 {
   list-style: none;
   position: relative;
@@ -216,7 +265,7 @@ footer {
 }
 
 #lista1 li {
-  margin: 5px;
+  margin: 8px;
   padding: 5px;
   border: 1px solid rgba(128, 128, 128, 0.394);
   color: rgb(109, 109, 109);
@@ -236,4 +285,83 @@ footer {
   padding: 5px;
 
   color: rgb(109, 109, 109);
+}
+@media screen and (min-width: 500px) and (max-width: 670px) {
+  nav img {
+    margin-left: 1em;
+  }
+
+  h1 {
+    margin: 18px;
+    font-size: 64px;
+    width: 6em;
+    margin-top: 123px;
+    margin-left: 16px;
+    margin-top: 60px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-left: 21px;
+  }
+
+  button {
+    margin-left: 21px;
+    margin-bottom: 34px;
+  }
+
+  #start {
+    margin: 0;
+    width: 100%;
+    display: block;
+  }
+
+  #svg-image {
+    display: none;
+  }
+  #navbar a:nth-of-type(1) {
+    display: none;
+  }
+  #navbar a:nth-of-type(2) {
+    display: none;
+  }
+  #navbar a:nth-of-type(3) {
+    display: none;
+  }
+
+  #completo {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 3rem;
+  }
+
+  .titolo {
+    font-size: 20px;
+  }
+  #miao {
+    width: 100%;
+    margin: 0;
+  }
+
+  #fine {
+    width: 100%;
+    margin: 0;
+  }
+
+  .alo {
+    margin: 0 0.5rem 0 0;
+  }
+
+  .post {
+    margin: 0.5rem;
+  }
+
+  .copertina {
+    width: 40%;
+    margin-top: 38px;
+    width: 170px;
+  }
+  .copertina img {
+    width: 166px;
+  }
 }

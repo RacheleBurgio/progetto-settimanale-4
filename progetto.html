@@ -16,7 +16,7 @@
           <a href="#">Membership</a>
           <a href="#">Write</a>
           <a href="#">Sign In</a>
-          <a href="#">get Started</a>
+          <a id="verde" href="#">get Started</a>
         </div>
       </nav>
     </header>
@@ -24,7 +24,7 @@
       <section id="start">
         <section>
           <section id="curios">
-            <h1>Stay curious</h1>
+            <h1>Stay curious.</h1>
           </section>
           <section>
             <h2>
@@ -9241,39 +9241,43 @@
           </svg>
         </section>
       </section>
-      <article>
+
+      <div id="trending">
         <div id="article-flex">
           <img src="./assets/svg/trending.svg" alt="" />
           <p>TRENDING ON MEDIUM</p>
         </div>
-        <div id="first-div">
-          <div class="item">
-            <div class="number">01</div>
+
+        <div class="item">
+          <div class="number">01</div>
+          <div class="textualElements">
             <p class="name">
               <img
                 src="./assets/imgs/image01.jpeg"
                 alt="helicopter"
-                class="image-article"
+                class="round"
               />Tom Cooper
             </p>
             <h3 class="title">Ukraine War,23 October 2022</h3>
             <p class="date">Oct 23 5 min read</p>
           </div>
-          <div class="item">
-            <div class="number">02</div>
+        </div>
+
+        <div class="item">
+          <div class="number">02</div>
+          <div class="textualElements">
             <p class="name">
-              <img
-                src="./assets/imgs/image02.png"
-                alt="E"
-                class="image-article"
-              />Artur Hayes in Entrepreneur's Handbook
+              <img src="./assets/imgs/image02.png" alt="E" class="round" />Artur
+              Hayes in Entrepreneur's Handbook
             </p>
             <h3 class="title">Comeback</h3>
             <p class="date">Oct 26 24 min read</p>
           </div>
+        </div>
 
-          <div class="item">
-            <div class="number">03</div>
+        <div class="item">
+          <div class="number">03</div>
+          <div class="textualElements">
             <p class="name">
               <img
                 src="./assets/imgs/image03.jpeg"
@@ -9288,9 +9292,10 @@
             <p class="date">Oct 26 2 min read</p>
           </div>
         </div>
-        <div id="last-div">
-          <div class="item">
-            <div class="number">04</div>
+
+        <div class="item">
+          <div class="number">04</div>
+          <div class="textualElements">
             <p class="name">
               <img
                 src="./assets/imgs/image04.png"
@@ -9306,8 +9311,10 @@
               <img class="star" src="./assets/svg/star.svg" alt="" />
             </p>
           </div>
-          <div class="item">
-            <div class="number">05</div>
+        </div>
+        <div class="item">
+          <div class="number">05</div>
+          <div class="textualElements">
             <p class="name">
               <img
                 src="./assets/imgs/image05.jpeg"
@@ -9323,8 +9330,10 @@
               <img class="star" src="./assets/svg/star.svg" alt="" />
             </p>
           </div>
-          <div class="item">
-            <div class="number">06</div>
+        </div>
+        <div class="item">
+          <div class="number">06</div>
+          <div class="textualElements">
             <p class="name">
               <img
                 src="./assets/imgs/image06.png"
@@ -9339,180 +9348,224 @@
             </p>
           </div>
         </div>
-      </article>
+      </div>
       <!-- da qui i post in basso -->
       <section id="completo">
-        <div class="post">
-          <img class="copertina" src="./assets/imgs/image08.jpeg" alt="" />
-          <p class="utente">
-            <img src="./assets/imgs/image07.jpeg" alt="" />
-            Robert Roy Britt
-          </p>
-          <div class="contenuto">
-            <p class="titolo">How Old is Old?</p>
-            <p class="testo">
-              What we consider “old” changes dramatically with age, and our
-              perspectives can be predictive of how well we age
-            </p>
-            <p class="data">
-              Oct 27 · 5 min read · <span class="cosino">Aging</span
-              ><img class="star" src="./assets/svg/star.svg" alt="" />
-            </p>
-          </div>
-        </div>
+        <section id="miao">
+          <div class="post">
+            <div class="alo">
+              <p class="utente">
+                <img src="./assets/imgs/image07.jpeg" alt="" />
+                Robert Roy Britt
+              </p>
+              <p class="titolo">How Old is Old?</p>
+              <p class="testo">
+                What we consider “old” changes dramatically with age, and our
+                perspectives can be predictive of how well we age
+              </p>
 
-        <div class="post">
-          <img class="copertina" src="./assets/imgs/image10.jpeg" alt="" />
-          <p class="utente">
-            <img src="./assets/imgs/image09.jpeg" alt="" />
-            Taru Anniina Liikanen
-          </p>
-          <div class="contenuto">
-            <p class="titolo">Is Taylor Swift Allowed to Speak About Fat?</p>
-            <p class="testo">
-              Can you speak about your trauma if you don't look traumatized?
-            </p>
-            <p class="data">
-              Oct 24 · 6 min read · <span class="cosino">Health</span
-              ><img class="star" src="./assets/svg/star.svg" alt="" />
-            </p>
-          </div>
-        </div>
+              <div class="postInfo">
+                <p class="data">
+                  Oct 27 · 5 min read · <span class="cosino">Aging</span>
+                  <img class="star" src="./assets/svg/star.svg" alt="" />
+                </p>
 
-        <div class="post">
-          <img class="copertina" src="./assets/imgs/image12.png" alt="" />
-          <p class="utente">
-            <img src="./assets/imgs/image11.jpeg" alt="" />
-            David Rodenas, Ph. D.
-          </p>
-          <div class="contenuto">
-            <p class="titolo">Don’t Screw Up, You Will Be Found Guilty</p>
-            <p class="testo">
-              Software Engineer, yours is the right to produce high-quality work
-              at all times, also the liability.
-            </p>
-            <p class="data">
-              Oct 15 · 5 min read ·
-              <span class="cosino">Software Engineering</span
-              ><img class="star" src="./assets/svg/star.svg" alt="" />
-            </p>
+                <img src="./assets/svg/bookmark.svg" alt="" class="bookmark" />
+              </div>
+            </div>
+            <div class="copertina">
+              <img src="./assets/imgs/image08.jpeg" alt="" />
+            </div>
           </div>
-        </div>
 
-        <div class="post">
-          <img class="copertina" src="./assets/imgs/image14.png" alt="" />
-          <p class="utente">
-            <img src="./assets/imgs/image13.png" alt="" />
-            Microsoft Design
-          </p>
-          <div class="contenuto">
-            <p class="titolo">Leave No Trace</p>
-            <p class="testo">
-              How product designers can break from the status quo and help our
-              planet
-            </p>
-            <p class="data">
-              Oct 25 · 11 min read · <span class="cosino">Sustainability</span>
-            </p>
-          </div>
-        </div>
+          <div class="post">
+            <div class="alo">
+              <p class="utente">
+                <img src="./assets/imgs/image09.jpeg" alt="" />
+                Taru Anniina Liikanen
+              </p>
+              <p class="titolo">Is Taylor Swift Allowed to Speak About Fat?</p>
+              <p class="testo">
+                Can you speak about your trauma if you don't look traumatized?
+              </p>
+              <div class="postInfo">
+                <p class="data">
+                  Oct 27 · 5 min read · <span class="cosino">Aging</span>
+                  <img class="star" src="./assets/svg/star.svg" alt="" />
+                </p>
 
-        <div class="post">
-          <img class="copertina" src="./assets/imgs/image16.jpg" alt="" />
-          <p class="utente">
-            <img src="./assets/imgs/image15.jpeg" alt="" />
-            Scott H. Young
-          </p>
-          <div class="contenuto">
-            <p class="titolo">
-              Variability, Not Repetition, is the Key to Mastery
-            </p>
-            <p class="testo">
-              Bruce Lee is reported to have said, “I fear not the man who has
-              practiced 10,000 kicks once, but the man who has practiced one
-              kick 10,000...
-            </p>
-            <p class="data">
-              Oct 26 · 7 min read ·<span class="cosino">Health</span>
-              <img class="star" src="./assets/svg/star.svg" alt="" />
-            </p>
+                <img src="./assets/svg/bookmark.svg" alt="" class="bookmark" />
+              </div>
+            </div>
+            <div class="copertina" id="taylor">
+              <img src="./assets/imgs/image10.jpeg" alt="" />
+            </div>
           </div>
-        </div>
 
-        <div class="post">
-          <img class="copertina" src="./assets/imgs/image18.jpeg" alt="" />
-          <p class="utente">
-            <img src="./assets/imgs/image17.png" alt="" />
-            Paul A. DeStefano in Human Parts
-          </p>
-          <div class="contenuto">
-            <p class="titolo">What I Overheard as an Escape Room Actor</p>
-            <p class="testo">
-              Lock a group of people in a room and you'll witness some
-              surprising confessions
-            </p>
-            <p class="data">
-              Jan 18, 2020 · 6 min read · ·<span class="cosino"
-                >Experiences</span
-              ><img class="star" src="./assets/svg/star.svg" alt="" />
-            </p>
-          </div>
-        </div>
+          <div class="post">
+            <div class="alo">
+              <p class="utente">
+                <img src="./assets/imgs/image11.jpeg" alt="" />
+                David Rodenas, Ph. D.
+              </p>
+              <p class="titolo">Don’t Screw Up, You Will Be Found Guilty</p>
+              <p class="testo">
+                Software Engineer, yours is the right to produce high-quality
+                work at all times, also the liability.
+              </p>
+              <div class="postInfo">
+                <p class="data">
+                  Oct 27 · 5 min read · <span class="cosino">Aging</span>
+                  <img class="star" src="./assets/svg/star.svg" alt="" />
+                </p>
 
-        <div class="post">
-          <img class="copertina" src="./assets/imgs/image20.jpg" alt="" />
-          <p class="utente">
-            <img src="./assets/imgs/image19.jpeg" alt="" />
-            Kim Scott
-          </p>
-          <div class="contenuto">
-            <p class="titolo">
-              6 Steps for Setting Measurable Goals to Avoid “Productivity
-              Paranoia”
-            </p>
-            <p class="testo">
-              With more people working in remote and hybrid environments than
-              ever before, company, team and individual goals must be explicit
-              and…
-            </p>
-            <p class="data">
-              Oct 24 · 6 min read ·<span class="cosino"> Health</span>
-            </p>
+                <img src="./assets/svg/bookmark.svg" alt="" class="bookmark" />
+              </div>
+            </div>
+            <div class="copertina" id="tizi">
+              <img src="./assets/imgs/image12.png" alt="" />
+            </div>
           </div>
-        </div>
+
+          <div class="post">
+            <div class="alo">
+              <p class="utente">
+                <img src="./assets/imgs/image13.png" alt="" />
+                Microsoft Design
+              </p>
+              <p class="titolo">Leave No Trace</p>
+              <p class="testo">
+                How product designers can break from the status quo and help our
+                planet
+              </p>
+              <div class="postInfo">
+                <p class="data">
+                  Oct 27 · 5 min read · <span class="cosino">Aging</span>
+                  <img class="star" src="./assets/svg/star.svg" alt="" />
+                </p>
+
+                <img src="./assets/svg/bookmark.svg" alt="" class="bookmark" />
+              </div>
+            </div>
+            <div class="copertina">
+              <img src="./assets/imgs/image14.png" alt="" />
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="alo">
+              <p class="utente">
+                <img src="./assets/imgs/image15.jpeg" alt="" />
+                Scott H. Young
+              </p>
+              <p class="titolo">
+                Variability, Not Repetition, is the Key to Mastery
+              </p>
+              <p class="testo">
+                Bruce Lee is reported to have said, “I fear not the man who has
+                practiced 10,000 kicks once, but the man who has practiced one
+                kick 10,000...
+              </p>
+              <div class="postInfo">
+                <p class="data">
+                  Oct 27 · 5 min read · <span class="cosino">Aging</span>
+                  <img class="star" src="./assets/svg/star.svg" alt="" />
+                </p>
+
+                <img src="./assets/svg/bookmark.svg" alt="" class="bookmark" />
+              </div>
+            </div>
+            <div class="copertina" id="jackie">
+              <img src="./assets/imgs/image16.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="alo">
+              <p class="utente">
+                <img src="./assets/imgs/image17.png" alt="" />
+                Paul A. DeStefanoin Human Parts
+              </p>
+              <p class="titolo">What I Overheard as an Escape Room Actor</p>
+              <p class="testo">
+                Lock a group of people in a room and you’ll witness some
+                surprising confessions
+              </p>
+              <div class="postInfo">
+                <p class="data">
+                  Oct 27 · 5 min read · <span class="cosino">Aging</span>
+                  <img class="star" src="./assets/svg/star.svg" alt="" />
+                </p>
+
+                <img src="./assets/svg/bookmark.svg" alt="" class="bookmark" />
+              </div>
+            </div>
+            <div class="copertina">
+              <img src="./assets/imgs/image18.jpeg" alt="" />
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="alo">
+              <p class="utente">
+                <img src="./assets/imgs/image19.jpeg" alt="" />
+                Kim Scott
+              </p>
+              <p class="titolo">
+                6 Steps for Setting Measurable Goals to Avoid “Productivity
+                Paranoia”
+              </p>
+              <p class="testo">
+                With more people working in remote and hybrid environments than
+                ever before, company, team and individual goals must be explicit
+                and…
+              </p>
+              <div class="postInfo">
+                <p class="data">
+                  Oct 27 · 5 min read · <span class="cosino">Aging</span>
+                  <img class="star" src="./assets/svg/star.svg" alt="" />
+                </p>
+
+                <img src="./assets/svg/bookmark.svg" alt="" class="bookmark" />
+              </div>
+            </div>
+            <div class="copertina" id=" plan">
+              <img src="./assets/imgs/image20.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section id="fine">
+          <div id="coso"><p>discover more of what matters to you</p></div>
+          <div class="padding">
+            <ul id="lista1">
+              <li>Programming</li>
+              <li>Data Science</li>
+              <li>Technology</li>
+              <li>Self Improvement</li>
+              <li>Writing</li>
+              <li>Relationships</li>
+              <li>Machine Learning</li>
+              <li>Productivity</li>
+              <li>Politics</li>
+            </ul>
+          </div>
+          <div class="padding">
+            <ul id="lista2">
+              <li>Help</li>
+              <li>Status</li>
+              <li>Writers</li>
+              <li>Blog</li>
+              <li>Careers</li>
+              <li>Privacy</li>
+              <li>Terms</li>
+              <li>About</li>
+              <li>Knowable</li>
+            </ul>
+          </div>
+        </section>
       </section>
     </main>
-    <footer>
-      <section id="fine">
-        <div id="coso"><p>discover more of what matters to you</p></div>
-        <div class="padding">
-          <ul id="lista1">
-            <li>Programming</li>
-            <li>Data Science</li>
-            <li>Technology</li>
-            <li>Self Improvement</li>
-            <li>Writing</li>
-            <li>Relationships</li>
-            <li>Machine Learning</li>
-            <li>Productivity</li>
-            <li>Politics</li>
-          </ul>
-        </div>
-        <div class="padding">
-          <ul id="lista2">
-            <li>Help</li>
-            <li>Status</li>
-            <li>Writers</li>
-            <li>Blog</li>
-            <li>Careers</li>
-            <li>Privacy</li>
-            <li>Terms</li>
-            <li>About</li>
-            <li>Knowable</li>
-          </ul>
-        </div>
-      </section>
-    </footer>
+
     <script src="./assets/script/script.js"></script>
   </body>
 </html>
