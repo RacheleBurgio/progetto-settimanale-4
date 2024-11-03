@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="nav">
         <img src="./assets/svg/logo.svg" alt="" />
         <div id="navbar">
           <a href="#">Our Story</a>
@@ -36,16 +36,15 @@
             <button>start reading</button>
           </section>
         </section>
-        <section id="m">
+        <section id="svg-col">
           <svg
+            id="svg-image"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 585 462"
             width="585"
             height="462"
             preserveAspectRatio="xMidYMid meet"
             style="
-              width: 100%;
-              height: 100%;
               transform: translate3d(0px, 0px, 0px);
               content-visibility: visible;
             "
@@ -9272,14 +9271,18 @@
             <h3 class="title">Comeback</h3>
             <p class="date">Oct 26 24 min read</p>
           </div>
+
           <div class="item">
             <div class="number">03</div>
             <p class="name">
-              <img src="./assets/imgs/image03.jpeg" alt="SJ" / class
-              ="square">Erin A Ross in slackjaw
+              <img
+                src="./assets/imgs/image03.jpeg"
+                alt="SJ"
+                class="square"
+              />Erin A Ross in slackjaw
             </p>
             <h3 class="title">
-              How I Learned to LOve My Breasts Even Though One Is A Horcrux For
+              How I Learned to Love My Breasts Even Though One Is A Horcrux For
               Voldemort
             </h3>
             <p class="date">Oct 26 2 min read</p>
@@ -9300,7 +9303,7 @@
             </h3>
             <p class="date">
               Oct 22 3 min read
-              <img src="./assets/imgs/svg/star.svg" alt="star" />
+              <img class="star" src="./assets/svg/star.svg" alt="" />
             </p>
           </div>
           <div class="item">
@@ -9317,7 +9320,7 @@
             </h3>
             <p class="date">
               Oct 13 6 min read
-              <img src="./assets/imgs/svg/star.svg" alt="star" />
+              <img class="star" src="./assets/svg/star.svg" alt="" />
             </p>
           </div>
           <div class="item">
@@ -9332,7 +9335,7 @@
             <h3 class="title">how to make visual studio code look amazing</h3>
             <p class="date">
               oct 20 7 min read
-              <img src="./assets/imgs/svg/star.svg" alt="star" />
+              <img class="star" src="./assets/svg/star.svg" alt="" />
             </p>
           </div>
         </div>
@@ -9409,8 +9412,7 @@
               planet
             </p>
             <p class="data">
-              Oct 25 · 11 min read · <span class="cosino">Sustainability</span
-              ><img class="star" src="./assets/svg/star.svg" alt="" />
+              Oct 25 · 11 min read · <span class="cosino">Sustainability</span>
             </p>
           </div>
         </div>
@@ -9474,13 +9476,43 @@
               and…
             </p>
             <p class="data">
-              Oct 24 · 6 min read ·<span class="cosino"> Health</span
-              ><img class="star" src="./assets/svg/star.svg" alt="" />
+              Oct 24 · 6 min read ·<span class="cosino"> Health</span>
             </p>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section id="fine">
+        <div id="coso"><p>discover more of what matters to you</p></div>
+        <div class="padding">
+          <ul id="lista1">
+            <li>Programming</li>
+            <li>Data Science</li>
+            <li>Technology</li>
+            <li>Self Improvement</li>
+            <li>Writing</li>
+            <li>Relationships</li>
+            <li>Machine Learning</li>
+            <li>Productivity</li>
+            <li>Politics</li>
+          </ul>
+        </div>
+        <div class="padding">
+          <ul id="lista2">
+            <li>Help</li>
+            <li>Status</li>
+            <li>Writers</li>
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>About</li>
+            <li>Knowable</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <script src="./assets/script/script.js"></script>
   </body>
 </html>

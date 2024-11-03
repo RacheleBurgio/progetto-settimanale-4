@@ -5,7 +5,7 @@ window.onscroll = function () {
   } else {
     head.style.backgroundColor = '#ffc017'
   }
-  const button = document.getElementById('nav-button')
+  const button = document.getElementById('curios')
   if (button && window.scrollY > 500) {
     button.style.backgroundColor = '#538724'
   } else {
@@ -37,5 +37,18 @@ function animateSvg(butts) {
     } else {
       butts[index].setAttribute('opacity', '1')
     }
+  }
+}
+
+let myNav = document.getElementById('nav')
+
+window.onscroll = () => {
+  if (
+    document.body.scrollTop >= 500 ||
+    document.documentElement.scrollTop >= 500
+  ) {
+    myNav.classList.add('scroll')
+  } else {
+    myNav.classList.remove('scroll')
   }
 }

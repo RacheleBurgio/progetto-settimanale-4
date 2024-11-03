@@ -2,6 +2,9 @@ nav {
   display: flex;
   border-bottom: 1px solid black;
   background-color: #ffc017;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 a {
   text-decoration: none;
@@ -37,7 +40,12 @@ h2 {
   padding: 15px 20px;
   border-radius: 30px;
 }
+.scroll {
+  background-color: white;
+}
+
 #start {
+  padding-top: 60px;
   background-color: #ffc017;
   display: flex;
   flex-direction: row;
@@ -54,9 +62,9 @@ button {
   margin-left: 90px;
 }
 
-#m {
+#svg-col {
   width: 30%;
-  margin-left: 43em;
+  margin-left: 41em;
 }
 
 #article-flex {
@@ -65,6 +73,9 @@ button {
   flex-direction: row;
   margin-left: 6rem;
   font-size: 15px;
+}
+#article-flex p {
+  margin: 20px;
 }
 #first-div {
   display: flex;
@@ -77,7 +88,8 @@ button {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  border-bottom: 1px solid grey;
+  border-bottom: 2px solid rgba(227, 225, 225, 0.579);
+  margin-bottom: 5em;
 }
 .item {
   width: 450px;
@@ -121,16 +133,18 @@ button {
 .completo {
   display: flex;
 }
+
 .copertina {
   position: absolute;
-  left: 31em;
-  height: 5px;
-  height: 136px;
+  left: 37em;
+  height: 133px;
   width: 13em;
+  margin-top: 21px;
 }
 .post {
   width: 25%;
   margin: 30px;
+  margin-left: 7em;
 }
 
 .utente {
@@ -166,4 +180,60 @@ button {
   position: relative;
   top: 5px;
   left: 3px;
+}
+
+.star2 {
+  position: relative;
+}
+
+footer {
+  position: relative;
+}
+#fine {
+  position: absolute;
+  bottom: 81em;
+  right: 20em;
+  left: 25em;
+  height: 35px;
+  margin-left: 40em;
+  padding: 10px 30px;
+  max-width: 50%;
+}
+
+#coso {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#lista1 {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.237);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#lista1 li {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.394);
+  color: rgb(109, 109, 109);
+}
+
+#lista2 {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+#lista2 li {
+  margin: 5px;
+  padding: 5px;
+
+  color: rgb(109, 109, 109);
 }
