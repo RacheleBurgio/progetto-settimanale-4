@@ -365,3 +365,67 @@ button {
     width: 166px;
   }
 }
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  nav img {
+    margin-left: 1em;
+  }
+
+  h1 {
+    margin: 18px;
+    font-size: 64px;
+    width: 6em;
+
+    margin-left: 46px;
+    margin-top: 104px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-left: 46px;
+  }
+
+  button {
+    margin-left: 46px;
+    margin-bottom: 34px;
+  }
+
+  #svg-col {
+    margin-left: -44px;
+  }
+  #completo {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 3rem;
+  }
+
+  .titolo {
+    font-size: 20px;
+  }
+  #miao {
+    width: 100%;
+    margin: 0;
+  }
+
+  #fine {
+    width: 100%;
+    margin: 0;
+  }
+
+  .alo {
+    margin: 0 0.5rem 0 0;
+  }
+
+  .post {
+    margin: 0.5rem;
+  }
+
+  .copertina {
+    width: 40%;
+    margin-top: 38px;
+    width: 170px;
+  }
+  .copertina img {
+    width: 166px;
+  }
+}
