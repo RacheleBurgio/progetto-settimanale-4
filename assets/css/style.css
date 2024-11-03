@@ -286,7 +286,7 @@ button {
 
   color: rgb(109, 109, 109);
 }
-@media screen and (min-width: 500px) and (max-width: 980px) {
+@media screen and (min-width: 500px) and (max-width: 670px) {
   nav img {
     margin-left: 1em;
   }
@@ -366,7 +366,7 @@ button {
   }
 }
 
-@media screen and (min-width: 980px) and (max-width: 1200px) {
+@media screen and (min-width: 671px) and (max-width: 1000px) {
   nav img {
     margin-left: 1em;
   }
